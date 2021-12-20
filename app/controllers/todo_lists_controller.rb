@@ -1,7 +1,7 @@
 class TodoListsController < ApplicationController
   before_action :set_todo_list, only: %i[ show edit update destroy ]
 
-  # GET /todo_lists or /todo_lists.json
+  # GET /todo_lists or /todo_lists.json/view
   def index
     @todo_lists = TodoList.all
   end
@@ -10,7 +10,7 @@ class TodoListsController < ApplicationController
   def show
   end
 
-  # GET /todo_lists/new
+  # GET /todo_lists/new/
   def new
     @todo_list = TodoList.new
   end
